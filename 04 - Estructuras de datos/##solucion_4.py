@@ -1,4 +1,4 @@
-##solucion 4
+##solucion_4
 ciudades=['Barranquilla','Berlin','New York','Buenos Aires','Sao Paulo','Madrid']
 print(ciudades[1])
 print(ciudades[1:4])
