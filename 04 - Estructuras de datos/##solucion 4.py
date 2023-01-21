@@ -5,7 +5,8 @@ print(ciudades[1:4])
 print(type(ciudades))
 print(ciudades[2:])
 print(ciudades[:4])
-ciudades.append('Berlin','Londres')
+ciudades.append('Berlin')
+ciudades.append('Londres')
 ciudades.remove('Madrid')
 ciudades.insert(3,'Roma')
 ciudades.extend(['Tokyo', 'Hong Kong'])
@@ -26,7 +27,10 @@ else:
 print(ciudades.count('Berlin'))
 print(numeros.count(13))
 numeroslista:list(numeros)
-unidad, dos, tres=numeros
+unidad, dos, tres,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,=numeros
+print(unidad)
+print(dos)
+print(tres)
 diccionario={   'Ciudad':ciudades,
                 'Paises':['Alemania','Colombia','USA','Italia','Francia'],
                 'Continente':['America','Europa','Asia','Oceania','Africa']}
