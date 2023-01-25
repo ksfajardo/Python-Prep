@@ -28,6 +28,20 @@ def repetido(lista):
             elemento=c
     return elemento, cont
 
+def maymen(lista, m):
+    '''si m 1 es 1 quiere el mayor si m es 0 da el menor'''
+    cont=0
+    for c in lista:
+        if (lista.count(c)>cont):
+            cont=lista.count(c)
+    masrepetidos=[i for i in lista if lista.count(i)==cont]
+    if (m==1):
+        masrepetidos.sort(reverse=True)
+        return masrepetidos[0], cont
+    elif (m==0):
+        masrepetidos.sort()
+        return masrepetidos[0], cont
+
 def minmax(lista, x=input('Ingrese 0 si quiere conocer el numero que menos se repite y 1 si quiere conocer el que mas se repite:')):
     '''devuelve el numero que mas se repite o el que menos se repite'''
     if (x==1):
